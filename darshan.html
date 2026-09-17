@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>You Are Being Missed ❤️</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #ffe4ec, #fcefff, #e8e4ff);
+        overflow: hidden;
+        color: #4a3540;
+      }
+
+      .card {
+        width: min(90%, 460px);
+        padding: 55px 40px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.62);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        border-radius: 32px;
+        box-shadow: 0 25px 70px rgba(120, 75, 100, 0.18);
+        position: relative;
+        z-index: 2;
+        animation: appear 1.2s ease;
+      }
+
+      .heart {
+        font-size: 52px;
+        display: inline-block;
+        animation: heartbeat 1.8s infinite;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-family: Georgia, serif;
+        font-size: 42px;
+        font-weight: 500;
+        color: #9b4d6a;
+        margin-bottom: 18px;
+      }
+
+      .message {
+        font-size: 17px;
+        line-height: 1.8;
+        color: #69525e;
+      }
+
+      .message span {
+        color: #a84f72;
+        font-weight: 600;
+      }
+
+      .little-note {
+        margin-top: 30px;
+        font-family: Georgia, serif;
+        font-size: 20px;
+        font-style: italic;
+        color: #9b7181;
+      }
+
+      .line {
+        width: 55px;
+        height: 2px;
+        background: #d89ab1;
+        margin: 25px auto;
+        border-radius: 10px;
+      }
+
+      .floating-heart {
+        position: absolute;
+        color: rgba(196, 92, 130, 0.35);
+        font-size: 22px;
+        animation: float 7s linear infinite;
+        bottom: -50px;
+      }
+
+      .h1 {
+        left: 12%;
+        animation-delay: 0s;
+      }
+      .h2 {
+        left: 28%;
+        animation-delay: 2s;
+        font-size: 15px;
+      }
+      .h3 {
+        left: 72%;
+        animation-delay: 4s;
+      }
+      .h4 {
+        left: 88%;
+        animation-delay: 1s;
+        font-size: 16px;
+      }
+      .h5 {
+        left: 50%;
+        animation-delay: 5s;
+        font-size: 13px;
+      }
+
+      @keyframes heartbeat {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        15% {
+          transform: scale(1.12);
+        }
+        30% {
+          transform: scale(1);
+        }
+        45% {
+          transform: scale(1.08);
+        }
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 0;
+        }
+        15% {
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(-110vh) rotate(25deg);
+          opacity: 0;
+        }
+      }
+
+      @keyframes appear {
+        from {
+          opacity: 0;
+          transform: translateY(25px) scale(0.97);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      @media (max-width: 500px) {
+        .card {
+          padding: 45px 25px;
+        }
+
+        h1 {
+          font-size: 34px;
+        }
+
+        .message {
+          font-size: 15px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="floating-heart h1">♡</div>
+    <div class="floating-heart h2">♥</div>
+    <div class="floating-heart h3">♡</div>
+    <div class="floating-heart h4">♥</div>
+    <div class="floating-heart h5">♡</div>
+
+    <div class="card">
+      <div class="heart">❤️</div>
+
+      <h1>You are being missed.</h1>
+
+      <div class="line"></div>
+
+      <p class="message">
+        Just thought you should know...
+        <br /><br />
+        someone out here is thinking about you a little more than they probably
+        should.
+        <br />
+        And honestly, <span>your absence is noticeable.</span>
+      </p>
+
+      <p class="little-note">Come back soon. 🌷</p>
+    </div>
+  </body>
+</html>
